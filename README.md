@@ -1,7 +1,7 @@
 pragma_ent
 ==========
 
-PRAGMA Experimental Network Testbed public reporsitory.
+PRAGMA Experimental Network Testbed public repository.
 
 
 
