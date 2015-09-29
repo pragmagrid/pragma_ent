@@ -1,0 +1,101 @@
+{
+   "administrators" : [
+      {
+         "email" : "ichikawa [at] is.naist.jp",
+         "name" : "Kohei Ichikawa"
+      },
+      {
+         "email" : "mcollins [at] acis.ufl.edu",
+         "name" : "Matthew Collins"
+      }
+   ],
+   "organizations" : [
+      {
+         "sites" : [
+            {
+               "hosts" : [
+                  {
+                     "addresses" : [
+                        "10.100.1.1"
+                     ],
+                     "description" : "perfSONAR-ent-naist"
+                  }
+               ],
+               "location" : {
+                  "city" : "Ikoma",
+                  "longitude" : "135.734",
+                  "latitude" : "34.733",
+                  "state" : "NARA"
+               }
+            }
+         ],
+         "description" : "NAIST"
+      },
+      {
+         "sites" : [
+            {
+               "hosts" : [
+                  {
+                     "addresses" : [
+                        "10.100.2.1"
+                     ],
+                     "description" : "perfSONAR-ent-ucsd"
+                  }
+               ],
+               "location" : {
+                  "city" : "San Diego",
+                  "longitude" : "-117.234",
+                  "latitude" : "32.880",
+                  "state" : "CA"
+               }
+            }
+         ],
+         "description" : "UCSD"
+      },
+      {
+         "sites" : [
+            {
+               "hosts" : [
+                  {
+                     "addresses" : [
+                        "10.100.3.1"
+                     ],
+                     "description" : "perfSONAR-ent-uf"
+                  }
+               ],
+               "location" : {
+                  "city" : "Gainesville",
+                  "longitude" : "-82.355",
+                  "latitude" : "29.644",
+                  "state" : "FL"
+               }
+            }
+         ],
+         "description" : "UF"
+      }
+   ],
+   "tests" : [
+      {
+         "members" : {
+            "members" : [
+               "10.100.1.1",
+               "10.100.2.1",
+               "10.100.3.1"
+            ],
+            "type" : "mesh"
+         },
+         "parameters" : {
+            "protocol" : "tcp",
+            "omit_interval" : "5",
+            "duration" : "30",
+            "interval" : "21600",
+            "force_bidirectional" : "1",
+            "tool" : "bwctl/iperf3",
+            "random_start_percentage" : "10",
+            "type" : "perfsonarbuoy/bwctl"
+         },
+         "description" : "Throughput Testing"
+      }
+   ],
+   "description" : "PRAGMA-ENT Mesh"
+}
