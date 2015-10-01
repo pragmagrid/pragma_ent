@@ -72,6 +72,27 @@
             }
          ],
          "description" : "UF"
+      },
+      {
+         "sites" : [
+            {
+               "hosts" : [
+                  {
+                     "addresses" : [
+                        "10.100.4.1"
+                     ],
+                     "description" : "perfSONAR-ent-iub"
+                  }
+               ],
+               "location" : {
+                  "city" : "Bloomington",
+                  "longitude" : "-0.13",
+                  "latitude" : "51.5",
+                  "state" : "IN"
+               }
+            }
+         ],
+         "description" : "IUB"
       }
    ],
    "tests" : [
