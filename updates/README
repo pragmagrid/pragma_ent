@@ -1,0 +1,12 @@
+
+Please use this rpm rocks-command-kvm-6.2-3.x86_64.rpm
+to replace one that came with KVM roll for Rocks 6.2
+
+Installation instructions:
+
+cp rocks-command-kvm-6.2-3.x86_64.rpm  /export/rocks/install/contrib/
+(cd /export/rocks/install/; rocks create distro)
+yum list rocks-command-kvm
+yum update rocks-command-kvm
+rocks run host vm-container "yum update rocks-command-kvm"
+
